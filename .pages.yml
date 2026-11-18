@@ -29,7 +29,7 @@ content:
         type: object
         fields:
           - { name: image, label: Zdjęcie w tle, type: image }
-          - { name: title, label: Tytuł, type: string }
+          - { name: title, label: Tytuł (nowa linia = nowy wiersz), type: text }
           - { name: tagline, label: Podtytuł, type: string }
       - name: intro
         label: Sekcja o gabinecie

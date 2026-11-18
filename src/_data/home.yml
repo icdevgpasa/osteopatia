@@ -1,7 +1,9 @@
 hero:
   image: /images/hero.jpg
-  title: PUT YOUR BODY IN GOOD HANDS
-  tagline: Release, Relax, Unwind
+  title: |-
+    PUT YOUR BODY
+    IN GOOD HANDS
+  tagline: ""
 intro:
   label: My —
   heading: HOLISTIC PRACTICE OSTEOPATHY
