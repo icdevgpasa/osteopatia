@@ -1,0 +1,105 @@
+media:
+  input: src/images
+  output: /images
+
+content:
+  - name: site
+    label: Ustawienia strony (kontakt, rezerwacje)
+    type: file
+    path: src/_data/site.yml
+    format: yaml
+    fields:
+      - { name: name, label: Imię i nazwisko, type: string }
+      - { name: brand, label: Nazwa gabinetu, type: string }
+      - { name: booking_url, label: Link do rezerwacji online, type: string }
+      - { name: booking_label, label: Tekst przycisku rezerwacji, type: string }
+      - { name: phone, label: Telefon, type: string }
+      - { name: email, label: E-mail, type: string }
+      - { name: address, label: Adres, type: text }
+      - { name: footer, label: Stopka, type: string }
+
+  - name: home
+    label: Strona główna
+    type: file
+    path: src/_data/home.yml
+    format: yaml
+    fields:
+      - name: hero
+        label: Baner główny
+        type: object
+        fields:
+          - { name: image, label: Zdjęcie w tle, type: image }
+          - { name: title, label: Tytuł, type: string }
+          - { name: tagline, label: Podtytuł, type: string }
+      - name: intro
+        label: Sekcja o gabinecie
+        type: object
+        fields:
+          - { name: label, label: Etykieta, type: string }
+          - { name: heading, label: Nagłówek, type: string }
+          - { name: image, label: Zdjęcie, type: image }
+          - { name: text, label: Tekst, type: text }
+          - { name: quote, label: Cytat, type: text }
+          - { name: quote_author, label: Autor cytatu, type: string }
+      - name: services_section
+        label: Sekcja usług
+        type: object
+        fields:
+          - { name: heading, label: Nagłówek, type: string }
+          - { name: image, label: Zdjęcie, type: image }
+      - name: services
+        label: Usługi
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Nazwa usługi, type: string }
+          - { name: items, label: Wskazania, type: string, list: true }
+      - name: contact
+        label: Sekcja kontakt
+        type: object
+        fields:
+          - { name: label, label: Etykieta, type: string }
+          - { name: heading, label: Nagłówek, type: string }
+
+  - name: about
+    label: O mnie
+    type: file
+    path: src/_data/about.yml
+    format: yaml
+    fields:
+      - { name: heading, label: Nagłówek, type: string }
+      - { name: subheading, label: Podtytuł, type: string }
+      - { name: title, label: Tytuł, type: string }
+      - { name: text, label: Tekst (akapity oddziel pustą linią), type: text }
+      - { name: image, label: Zdjęcie, type: image }
+      - name: education
+        label: Edukacja
+        type: object
+        list: true
+        fields:
+          - { name: years, label: Lata, type: string }
+          - { name: title, label: Szkoła / kurs, type: string }
+          - { name: details, label: Szczegóły, type: text }
+
+  - name: supplements
+    label: Suplementy
+    type: file
+    path: src/_data/supplements.yml
+    format: yaml
+    fields:
+      - { name: label, label: Etykieta, type: string }
+      - { name: heading, label: Nagłówek, type: string }
+      - { name: image, label: Zdjęcie główne, type: image }
+      - { name: intro, label: Wstęp, type: text }
+      - name: sections
+        label: Sekcje
+        type: object
+        list: true
+        fields:
+          - { name: heading, label: Nagłówek, type: string }
+          - { name: text, label: Tekst, type: text }
+      - { name: cta, label: Zachęta, type: string }
+      - { name: shop_heading, label: Nagłówek sklepu, type: string }
+      - { name: product_image, label: Zdjęcie produktu, type: image }
+      - { name: button_label, label: Tekst przycisku, type: string }
+      - { name: button_url, label: Link do sklepu, type: string }

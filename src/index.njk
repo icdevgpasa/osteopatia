@@ -1,0 +1,62 @@
+---
+layout: base.njk
+---
+{% set h = home %}
+<section class="hero" style="background-image:url('{{ h.hero.image }}')">
+  <div class="hero-frame">
+    <h1>{{ h.hero.title }}</h1>
+    <a class="btn btn-light" href="{{ site.booking_url }}" target="_blank" rel="noopener">{{ site.booking_label }}</a>
+    <p class="tagline">{{ h.hero.tagline }}</p>
+  </div>
+</section>
+
+<section class="intro container">
+  <div class="intro-head">
+    <p class="label">{{ h.intro.label }}</p>
+    <h2 class="big">{{ h.intro.heading }}</h2>
+    {% if h.intro.image %}<img class="intro-img" src="{{ h.intro.image }}" alt="{{ site.name }}" loading="lazy">{% endif %}
+  </div>
+  <div class="intro-text">
+    {% for p in h.intro.text | paras %}<p>{{ p }}</p>{% endfor %}
+    {% if h.intro.quote %}
+    <blockquote>
+      <p>{{ h.intro.quote }}</p>
+      <cite>{{ h.intro.quote_author }}</cite>
+    </blockquote>
+    {% endif %}
+  </div>
+</section>
+
+<section id="uslugi" class="services-intro">
+  <img src="{{ h.services_section.image }}" alt="" loading="lazy">
+  <h2 class="overlay-title">{{ h.services_section.heading }}</h2>
+</section>
+
+<section class="services container">
+  {% for s in h.services %}
+  <article class="service">
+    <h3>{{ s.title }}</h3>
+    <ul>{% for i in s.items %}<li>{{ i }}</li>{% endfor %}</ul>
+    <a class="btn" href="{{ site.booking_url }}" target="_blank" rel="noopener">{{ site.booking_label }}</a>
+  </article>
+  {% endfor %}
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="container contact-inner">
+    <div>
+      <p class="label light">{{ h.contact.label }}</p>
+      <h2 class="serif">{{ h.contact.heading }}</h2>
+      <div class="contact-cols">
+        <p>{{ site.address | nl2br | safe }}</p>
+        <p>Tel: <a href="tel:{{ site.phone | replace(' ', '') | replace('-', '') }}">{{ site.phone }}</a><br>
+           Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <a class="btn btn-cream" href="{{ site.booking_url }}" target="_blank" rel="noopener">Umów wizytę online</a>
+      <a class="btn btn-outline-light" href="mailto:{{ site.email }}">Napisz wiadomość</a>
+      <a class="btn btn-outline-light" href="tel:{{ site.phone | replace(' ', '') | replace('-', '') }}">Zadzwoń</a>
+    </div>
+  </div>
+</section>

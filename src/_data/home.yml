@@ -1,0 +1,103 @@
+hero:
+  image: /images/hero.jpg
+  title: PUT YOUR BODY IN GOOD HANDS
+  tagline: Release, Relax, Unwind
+intro:
+  label: My —
+  heading: HOLISTIC PRACTICE OSTEOPATHY
+  image: /images/portret-1.jpg
+  text: |-
+    "Osteopatia to dla mnie znacznie więcej niż zawód. To pasja, nieustanne poszerzanie wiedzy i zaangażowanie w poszukiwaniu najlepszych rozwiązań dla pacjentów. W swojej pracy łączę wiedzę medyczną, doświadczenie i szacunek dla indywidualności każdego organizmu.
+
+    Wierzę, że prawdziwy profesjonalizm zaczyna się od uważnego słuchania, zrozumienia i spojrzenia na człowieka jako całość."
+  quote: „To find health should be the object of the doctor. Anyone can find disease.”
+  quote_author: Andrew Taylor Still
+services_section:
+  heading: PHILOSOPHY
+  image: /images/uslugi.jpg
+services:
+  - title: TERAPIA DZIECI I NIEMOWLĄT
+    items:
+      - zaburzenia czaszkowe
+      - wady zgryzu
+      - zaburzenia logopedyczne/ wady wymowy zaburzenia układy stomatognatycznego
+      - wady postawy miednicy, płaskostopie, pięty koślawe
+      - problemy ze skupieniem, koncentracją, nauką
+      - problemy ze spaniem
+      - nadpobudliwość psychoruchowa
+      - zaburzenia układu pokarmowego – bóle brzucha, zaburzenia trawienia, kolki
+  - title: TERAPIA STAWÓW SKRONIOWO-ŻUCHWOWYCH
+    items:
+      - bruksizm
+      - zaciskanie zębów
+      - bóle zębów
+      - bóle głowy i twarzoczaszki
+      - przewlekłe bóle i zapalenia ucha
+      - szumy i piski uszne
+      - bóle głowy – migrenowe, napięciowe
+      - neuralgie
+  - title: TERAPIA WISCERALNA
+    items:
+      - zaparcia/ biegunki
+      - wzdęcia
+      - zgaga, refluks
+      - "zaburzenia przewlekłe: SIBO"
+      - candida
+      - dysbioza jelitowa
+      - terapia blizn pozabiegowych
+  - title: TERAPIA CRANIO-SACRALNA
+    items:
+      - bóle głowy różnego pochodzenia
+      - dolegliwości zatok
+      - dysfunkcje wzroku oraz słuchu
+      - problemy stomatologiczne
+      - porażenia nerwów obwodowych
+      - uszkodzenia nerwów czaszkowych oraz OUN
+      - autyzm
+      - zaburzenia koncentracji
+      - traumy
+      - nerwica
+      - depresja
+      - stwardnienie rozsiane – SM
+      - choroba Parkinsona
+      - schorzenia układu kostno–stawowego
+  - title: TERAPIA NEUROLOGICZNA
+    items:
+      - terapia po udarach niedokrwiennych
+      - zaburzenia mowy
+      - zaburzenia układu wzrokowego
+      - stany po zapaleniach opon mózgowo-rdzeniowych
+      - problemy neurologopedyczne
+      - stany po chirurgii czaszkowej
+      - stany po bakteryjnych zakażeniach OUN
+      - urazy tkanek miękkich i kości w obrębie twarzoczaszki
+  - title: TERAPIA ORTOPEDYCZNA
+    items:
+      - rwa kulszowa, udowa, barkowa
+      - bóle odcinka szyjnego, piersiowego i lędźwiowego
+      - bóle kości krzyżowej i guzicznej
+      - dyskopatie
+      - zespoły cieśni nadgarstka
+      - bóle stawu biodrowego, kolanowego, skokowego
+      - bóle barku min. bark zamrożony, zapalenie kaletki
+      - bóle stawu łokciowego min. łokieć golfisty, tenisisty
+      - objawy mrowienia, drętwienia kończyn
+  - title: TERAPIA OKOŁOPORODOWA
+    items:
+      - prowadzenie ciąży
+      - przygotowanie pacjentki do porodu
+      - praca na mięśniach dna miednicy
+      - praca na przeponie oddechowej oraz moczowo-płciowej
+      - praca na bliźnie po cięciu cesarskim
+      - normalizacja układu nerwowego, powięziowego oraz mięśniowego
+  - title: TERAPIA UROGINEKOLOGICZNA
+    items:
+      - nietrzymanie moczu
+      - bolesne miesiączki
+      - zaburzenia funkcji dna miednicy u mężczyzn
+      - przygotowanie do zajścia w ciążę i porodu
+      - dolegliwości bólowe przy stosunku
+      - terapia blizny
+contact:
+  label: CONTACT
+  heading: GET IN TOUCH

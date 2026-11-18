@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Suplementy
+permalink: /suplementy/
+---
+{% set s = supplements %}
+<section class="supp-head container narrow">
+  <p class="supp-label">{{ s.label }}</p>
+  <h1>{{ s.heading }}</h1>
+  {% for p in s.intro | paras %}<p>{{ p }}</p>{% endfor %}
+</section>
+
+<section class="supp-grid">
+  <div class="supp-img" style="background-image:url('{{ s.image }}')" role="img" aria-label="Zioła trzymane w dłoni"></div>
+  <div class="supp-body">
+    {% for sec in s.sections %}
+      {% if loop.first %}<h2>{{ sec.heading }}</h2>{% else %}<h3>{{ sec.heading }}</h3>{% endif %}
+      {% for p in sec.text | paras %}<p>{{ p }}</p>{% endfor %}
+    {% endfor %}
+    <p class="supp-cta">{{ s.cta }}</p>
+  </div>
+  <div class="supp-shop">
+    <h2>{{ s.shop_heading }}</h2>
+    <a class="btn btn-green" href="{{ s.button_url }}" target="_blank" rel="noopener">{{ s.button_label }} <span aria-hidden="true">⟶</span></a>
+  </div>
+  <div class="supp-img" style="background-image:url('{{ s.product_image }}')" role="img" aria-label="Mierznica czarna – opakowanie"></div>
+</section>

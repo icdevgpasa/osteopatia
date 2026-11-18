@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.brand }} – {{ site.name }}</title>
+  <meta name="description" content="{{ description or 'Gabinet osteopatii Aleksandra Połowniak – Flow Osteopatia, Warszawa Bielany (Metro Słodowiec).' }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">
+      <span class="logo-name">{{ site.name | upper }}</span>
+      <span class="logo-brand">{{ site.brand | upper }}</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="nav">
+      <a href="/" {% if page.url == "/" %}class="active"{% endif %}>H O M E</a>
+      <a href="/o-mnie/" {% if page.url == "/o-mnie/" %}class="active"{% endif %}>O MNIE</a>
+      <a href="/suplementy/" {% if page.url == "/suplementy/" %}class="active"{% endif %}>SUPLEMENTY</a>
+      <a href="/#uslugi">USŁUGI</a>
+      <a href="/#kontakt">KONTAKT</a>
+    </nav>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">{{ site.footer }}</footer>
+</body>
+</html>
